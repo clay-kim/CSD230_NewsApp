@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Final project</string>
+    <string name="homeMsg">Search News by keyword</string>
+    <string name="btn_search">Search</string>
+    <string name="loading">Loading...</string>
+    <string name="no_search_term">Please enter a search term</string>
+    <string name="no_network">Please check your network connection and try again.</string>
+</resources>
