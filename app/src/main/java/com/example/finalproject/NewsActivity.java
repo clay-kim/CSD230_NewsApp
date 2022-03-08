@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.facebook.drawee.drawable.ProgressBarDrawable;
 
 
 import org.json.JSONArray;
@@ -62,7 +61,7 @@ public class NewsActivity extends MainActivity implements SelectListener {
 
 
         NetworkUtils manager = new NetworkUtils(this); //!?!?
-        manager.getNewsHeadlines(listener, "general", null);
+        manager.getNewsHeadlines(listener, "entertainment", null);
 
 
 
@@ -89,7 +88,7 @@ public class NewsActivity extends MainActivity implements SelectListener {
         mRecyclerView = findViewById(R.id.re_NewsList);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 1));
-        mAdapter = new MyAdapter(list, NewsActivity.this, this);
+        mAdapter = new MyAdapter( NewsActivity.this, list, this);
         mRecyclerView.setAdapter(mAdapter);
     }
 

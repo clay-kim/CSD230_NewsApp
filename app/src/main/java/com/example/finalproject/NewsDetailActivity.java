@@ -9,6 +9,8 @@ import android.view.TextureView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import org.w3c.dom.Text;
 
 public class NewsDetailActivity extends AppCompatActivity {
@@ -31,7 +33,7 @@ public class NewsDetailActivity extends AppCompatActivity {
         tv_detail = findViewById(R.id. tv_detail_detail);
         tv_content = findViewById(R.id. tv_detail_content);
         tv_time = findViewById(R.id. tv_detail_time);
-        img_news = findViewById(R.id. img_detial_news);
+        img_news = findViewById(R.id. img_detail_news);
 
 
         headlines = (NewsHeadlines) getIntent().getSerializableExtra("data");
@@ -41,6 +43,11 @@ public class NewsDetailActivity extends AppCompatActivity {
         tv_detail.setText(headlines.getDescription());
         tv_time.setText(headlines.getPublishedAt());
         tv_content.setText(headlines.getContent());
+
+        Picasso.get().load(headlines.getUrlToImage()).into(img_news);
+//        Uri uri = Uri.parse(headlines.getUrlToImage());
+//        img_news.setImageURI(uri);
+
 
     }
 }

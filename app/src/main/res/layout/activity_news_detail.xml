@@ -33,10 +33,10 @@
                             android:textColor="@color/wine">
                         </TextView>
                         <ImageView
-                            android:id="@+id/img_detial_news"
+                            android:id="@+id/img_detail_news"
                             android:layout_width="match_parent"
                             android:scaleType="fitXY"
-                            android:src="@drawable/ic_launcher_background"
+                            android:src="@null"
                             android:layout_marginTop="8dp"
                             android:layout_height="250dp">
 
@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_detail_content"
                     android:textSize="20sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/custom3"
                     android:layout_marginTop="8dp">
                 </TextView>
 

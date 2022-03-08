@@ -23,7 +23,7 @@ public class NetworkUtils {
     public void getNewsHeadlines(OnFetchDataListener listener, String category, String query){
 
         CallNewsApi callNewsApi = retrofit.create(CallNewsApi.class);
-        Call<NewsApiResponse> call = callNewsApi.callHeadlines("kr", category, query, context.getString(R.string.api_Key));
+        Call<NewsApiResponse> call = callNewsApi.callHeadlines("us", category, query, context.getString(R.string.api_Key));
 
             try {
                 call.enqueue(new Callback<NewsApiResponse>() {
