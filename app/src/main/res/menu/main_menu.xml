@@ -24,6 +24,9 @@
                 <item android:title="Business" android:icon="@drawable/ic_business"
                     android:id="@+id/nav_business"/>
 
+                <item android:title="Health" android:icon="@drawable/ic_health"
+                    android:id="@+id/nav_health"/>
+
                 <item android:title="Sports" android:icon="@drawable/ic_sports"
                     android:id="@+id/nav_sports"/>
 

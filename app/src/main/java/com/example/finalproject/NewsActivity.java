@@ -55,7 +55,6 @@ public class NewsActivity extends MainActivity implements SelectListener {
     //for navigation side bar
     DrawerLayout drawerLayout;
     NavigationView navigationView;
-    Toolbar toolbar;
     ActionBarDrawerToggle actionBarDrawerToggle;
 
 
@@ -182,6 +181,15 @@ public class NewsActivity extends MainActivity implements SelectListener {
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
+                    case R.id.nav_health:
+                        Log.d("DEBUG:::","Health is clicked!");
+                        progressDialog.setTitle("Searching news article");
+                        progressDialog.show();
+                        manager = new NetworkUtils(NewsActivity.this);
+                        manager.getNewsHeadlines(listener, "us","health", null);
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
                     case R.id.nav_technology:
                         Log.d("DEBUG:::","tech is clicked!");
                         progressDialog.setTitle("Searching news article");
@@ -217,7 +225,7 @@ public class NewsActivity extends MainActivity implements SelectListener {
 
         @Override
         public void onError(String message) {
-            Log.d("ERROR:", "fething data failed");
+            Log.d("ERROR:", "fetching data failed");
         }
     };
 

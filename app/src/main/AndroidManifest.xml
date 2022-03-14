@@ -14,8 +14,7 @@
         android:theme="@style/Theme.FinalProject">
         <activity
             android:name=".NewsDetailActivity"
-            android:exported="false"
-            android:parentActivityName=".NewsActivity"/>
+            android:exported="false" />
 
         <activity
             android:name=".MainActivity"

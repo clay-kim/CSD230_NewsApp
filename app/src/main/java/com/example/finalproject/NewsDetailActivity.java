@@ -34,7 +34,7 @@ public class NewsDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_detail);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tv_title = findViewById(R.id. tv_detail_title);
         tv_author = findViewById(R.id. tv_detail_author);
