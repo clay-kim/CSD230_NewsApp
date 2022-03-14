@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsDetailActivity"
+    android:background="@color/background2"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardElevation="10dp"
+                    android:background="@color/color_accent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="6dp"
+                        android:background="@color/custom">
+                        <TextView
+                            android:id="@+id/tv_detail_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="24sp"
+                            android:textColor="@color/orange">
+                        </TextView>
+                        <ImageView
+                            android:id="@+id/img_detail_news"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@null"
+                            android:layout_marginTop="8dp"
+                            android:layout_height="270dp">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_detail_author"
+                            android:layout_marginTop="6dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/orange">
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_detail_time"
+                            android:layout_marginTop="3dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/color_primary">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_detail_detail"
+                    android:textSize="21sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/black"
+                    android:background="@color/custom"
+                    android:layout_marginTop="8dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_detail_content"
+                    android:textSize="21sp"
+                    android:layout_margin="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/background2"
+                    android:background="@color/custom"
+                    android:layout_marginTop="4dp">
+                </TextView>
+
+
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

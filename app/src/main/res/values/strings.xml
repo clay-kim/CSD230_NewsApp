@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">Final project</string>
-    <string name="homeMsg">Search News by keyword</string>
-    <string name="btn_search">Search</string>
-    <string name="loading">Loading...</string>
+    <string name="app_name">GET/News</string>
+    <string name="homeMsg">Today\'s random quote</string>
+    <string name="btn_search">get()</string>
+    <string name="api_Key">be5f460cf91a4335a73b5e1a9fd08efe</string>
     <string name="no_search_term">Please enter a search term</string>
     <string name="no_network">Please check your network connection and try again.</string>
+
+    <string name="menu_Open">Open</string>
+    <string name="close_menu">Close</string>
 </resources>

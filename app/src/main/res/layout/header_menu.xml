@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/color_primary"
+    >
+
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/getnews">
+
+    </ImageView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="get().news everyday"
+        android:textColor="@color/white"
+        android:textSize="18sp">
+
+    </TextView>
+
+
+</LinearLayout>
