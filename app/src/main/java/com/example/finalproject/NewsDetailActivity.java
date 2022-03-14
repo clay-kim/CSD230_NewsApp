@@ -13,6 +13,12 @@ import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
 
+/**
+ * Sung Kim (Clay)
+ * NewsDetailActivity:
+ * Shows details of headline news
+ */
+
 public class NewsDetailActivity extends AppCompatActivity {
     NewsHeadlines headlines;
 
@@ -27,6 +33,8 @@ public class NewsDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_detail);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tv_title = findViewById(R.id. tv_detail_title);
         tv_author = findViewById(R.id. tv_detail_author);
@@ -45,9 +53,6 @@ public class NewsDetailActivity extends AppCompatActivity {
         tv_content.setText(headlines.getContent());
 
         Picasso.get().load(headlines.getUrlToImage()).into(img_news);
-//        Uri uri = Uri.parse(headlines.getUrlToImage());
-//        img_news.setImageURI(uri);
-
 
     }
 }

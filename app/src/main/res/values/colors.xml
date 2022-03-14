@@ -8,9 +8,18 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFF</color>
     <color name="wine">#D55555</color>
-    <color name="custom">#E3DF1A</color>
+    <color name="custom">#F0ECE7</color>
     <color name="custom2">#3681D7</color>
     <color name="custom3">#50B2DF</color>
-    <color name="background">#C66989B9</color>
-    <color name="gray">#AAB0B3</color>
+    <color name="background">#457258</color>
+    <color name="orange">#DE744C</color>
+    <color name="background2">#27292A</color>
+    <color name="almostWhite">#F3F8EC</color>
+
+    <color name="color_accent">#AAB0B3</color>
+    <color name="color_primary">#182125</color>
+    <color name="color_secondary">#161617</color>
+    <color name="textColorPrimary">#182125</color>
+
+
 </resources>

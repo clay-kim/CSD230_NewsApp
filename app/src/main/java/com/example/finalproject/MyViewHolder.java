@@ -8,6 +8,12 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+/**
+ * Sung Kim (Clay)
+ * ViewHolder class for RecyclerView
+ * Shows: headline news Image + Description + Title in CardView
+ */
+
 public class MyViewHolder extends RecyclerView.ViewHolder {
     TextView tv_title, tv_description;
     ImageView img_headline;
