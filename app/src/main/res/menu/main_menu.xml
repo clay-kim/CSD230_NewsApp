@@ -6,28 +6,28 @@
         <item android:id="@+id/nav_home" android:title="Home"
             android:icon="@drawable/ic_baseline_home_24" />
         <item android:id="@+id/nav_us" android:title="US"
-            android:icon="@drawable/ic_baseline_home_24" />
+            android:icon="@drawable/ic_language" />
         <item android:id="@+id/nav_kr" android:title="KOR (Beta)"
-            android:icon="@drawable/ic_baseline_home_24" />
+            android:icon="@drawable/ic_language" />
     </group>
 
     <group android:checkableBehavior="single">
         <item android:title="Category">
         <menu>
             <group>
-                <item android:title="General" android:icon="@drawable/ic_baseline_home_24"
+                <item android:title="General" android:icon="@drawable/ic_general"
                     android:id="@+id/nav_general"/>
 
-                <item android:title="Entertainment" android:icon="@drawable/ic_baseline_home_24"
+                <item android:title="Entertainment" android:icon="@drawable/ic_entertainment"
                     android:id="@+id/nav_entertainment"/>
 
-                <item android:title="Business" android:icon="@drawable/ic_baseline_home_24"
+                <item android:title="Business" android:icon="@drawable/ic_business"
                     android:id="@+id/nav_business"/>
 
-                <item android:title="Sports" android:icon="@drawable/ic_baseline_home_24"
+                <item android:title="Sports" android:icon="@drawable/ic_sports"
                     android:id="@+id/nav_sports"/>
 
-                <item android:title="Technology" android:icon="@drawable/ic_baseline_home_24"
+                <item android:title="Technology" android:icon="@drawable/ic_tech"
                     android:id="@+id/nav_technology"/>
 
             </group>
@@ -41,7 +41,7 @@
         <item android:title="Log out">
             <menu>
                 <group>
-                    <item android:title="Log out" android:icon="@drawable/ic_baseline_home_24"
+                    <item android:title="Exit" android:icon="@drawable/ic_logout"
                         android:id="@+id/nav_logout"/>
 
                 </group>
